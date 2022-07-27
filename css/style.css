@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&family=Poppins:wght@200&family=Roboto:wght@300&display=swap');
+* { 
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+
+body{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;;
+    font-weight: bolder;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #1F4690;
+}
+/* imagenes de remeras */
+.imagen{
+    width: 100%;
+}
+/* segunda clase de portada */
+
+
+/* titulos */
+h1,h2,h3,.tituloNovedades,.tituloP,.tituloO,.tituloNovedades {
+    font-size: large;
+    display: grid;
+    justify-content: center;
+    color: white;
+}
+h1,.tituloO,.tituloP,.tituloNovedades {
+    padding: 10px 0;
+    border: 3px solid white;
+    border-radius: 1cm;
+    margin: 5px;
+}
+h2,.tituloD,h3{
+    color:  #E8AA42;
+}
+
+nav ul li{
+    list-style-type: none;
+
+}
+a{
+    text-decoration: none;
+}
+nav{
+    color: white;
+    border:3px solid white;
+    
+    
+}
+.menuNav{
+    color: white;
+
+}
+.flexTitulo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.textoOferta{
+    color:white;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
+.aside{
+    font-size: large;
+    display: grid;
+    justify-content: center;
+    border: 3px double white;
+    border-radius: 1cm;
+}
+h3,h2{
+    border:3px solid white;
+}
+footer{
+    padding: 25px;
+    background-color: #E8AA42;
+    margin-bottom:0;
+    margin-top: 10px;
+
+}
+.ad,aside{
+    width: 100%;}
+    
+    
+/*AREAS*/
+
+
+header{
+    grid-area: header;
+}
+nav{
+    grid-area: nav;
+}
+aside{
+    grid-area: sidebar;
+}
+.ad{
+    grid-area: ad;
+}
+article{
+    grid-area: oferta;
+}
+.galeriaGrid{
+    grid-area: galeria;
+}
+.tituloNovedades{
+    grid-area: novedades;
+}
+.contenido{
+    grid-area: contenido;
+}
+footer{
+    grid-area: footer;
+}
+/* Areas 2*/
+
+.grillaGeneral{
+    background-color: #1F4690;
+    margin-bottom: 1em;
+    display: grid;
+    justify-items: center;
+    /* gap: 15px; */
+    grid-template-areas: 
+    
+    "header"
+    "nav"
+    "sidebar"
+    "ad"
+    "galeria"
+    "contenido"
+    "oferta"
+    "footer";
+}
+
+
+.padre{
+    background-color:#E8AA42;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    justify-items: center;
+    gap: 25px;
+
+}
+img{
+    border: 8px solid #1F4690;
+    margin-top: 1em;
+}
+.video{
+    width: 90%;
+    margin: 1vh;
+}
+
+@media (min-width:500px){
+.grillaGeneral{  
+        margin: 0%;
+        display: grid;
+        grid-template-areas: 
+        "header header"
+        " nav  nav "
+        "galeria galeria"
+        "contenido contenido"
+        "oferta oferta"
+        "footer footer ";
+        grid-template-columns:1fr;}
+    
+    
+    .mainPrincipal{
+    margin: 10px auto; 
+    }
+    nav ul{
+        display: flex; 
+        flex-direction: column;
+        justify-content:space-evenly;
+        
+    }
+    li{
+        border: 3px solid #E8AA42;
+        border-radius: 1cm;
+    }
+    .flexTitulo{
+        display: flex;
+        flex-direction: row;
+    }
+    .ad,aside{
+        width: 100%;
+    }
+    h1,.tituloO,.tituloP,.tituloNovedades{
+        color: #E8AA42;
+        border: 3px solid #E8AA42 ;
+    }
+    
+    .menuNav{
+        border: none;
+        width: 100%; 
+        color: #E8AA42;
+        
+    }
+    
+    p,h4,h5{
+        color: white;
+    }
+    h3,h2{
+        border:3px solid #E8AA42;
+        border-radius: 1cm;}
+    footer{
+        margin-top: 0%;
+    }
+}
+ @media(min-width:768px) { 
+    .padre{  
+        margin: 0%;
+        display: grid;
+        grid-template-areas: 
+        "header header header"
+        " nav  nav nav"
+        "galeria galeria galeria"
+        "contenido contenido  oferta"
+        "footer footer footer";
+        grid-template-columns:1fr 1fr 1fr ;
+        grid-template-rows: 1fr 1fr 1fr  ;
+        align-items: end;}
+    
+.grillaHeader{
+    display: grid;
+    width: 100%;
+}
+}
+@media(min-width:1024px) {
+    .padre{  
+        margin: 0%;
+        background-color: #1F4690;
+        font-family: 'Roboto', sans-serif;
+        display: grid;
+        grid-template-areas: 
+        "galeria galeria galeria galeria"
+        "galeria galeria galeria galeria"
+        "galeria galeria ";
+        grid-template-columns:1fr 1fr 1fr  1fr;
+        grid-template-rows: 1fr 1fr 1fr  ;
+    }
+    .grillaHeader{
+        background-color: #E8AA42;
+    }
+    }
+
+
