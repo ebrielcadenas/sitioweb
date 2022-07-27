@@ -164,16 +164,23 @@ img{
         grid-template-areas: 
         "header header"
         " nav  nav "
+        "footer footer ";
+        grid-template-columns:1fr 1fr 1fr ;}
+/* .mainPrincipal{ *
+    margin:0%;
+    display: grid;
+    grid-template-areas:
+        "aside   ad   "
+        "novedades novedades"
         "galeria galeria"
         "contenido contenido"
-        "oferta oferta"
-        "footer footer ";
-        grid-template-columns:1fr;}
+        "oferta oferta";
+         grid-template-columns:1fr 1fr 1fr; */
+}
+}
+    /* .mainPrincipal{ */
+    /* margin: 10px auto;  */
     
-    
-    .mainPrincipal{
-    margin: 10px auto; 
-    }
     nav ul{
         display: flex; 
         flex-direction: column;
@@ -212,8 +219,8 @@ img{
     footer{
         margin-top: 0%;
     }
-}
- @media(min-width:768px) { 
+
+    @media(min-width:768px) { 
     .padre{  
         margin: 0%;
         display: grid;
