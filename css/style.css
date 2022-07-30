@@ -22,7 +22,7 @@ body{
 
 
 /* titulos */
-h1,h2,h3,.tituloNovedades,.tituloP,.tituloO,.tituloNovedades {
+h1,h2,h3,.tituloNovedades,.tituloP,.tituloO,.tituloNovedades,.tituloOferta {
     font-size: large;
     display: grid;
     justify-content: center;
@@ -36,6 +36,9 @@ h1,.tituloO,.tituloP,.tituloNovedades {
 }
 h2,.tituloD,h3{
     color:  #E8AA42;
+}
+.tituloOferta{
+    background-color: #E8AA42;
 }
 
 nav ul li{
@@ -92,8 +95,17 @@ footer{
     .c2{
     transition:all 2s;
     }
-    .subtitulo:hover{
-        /* transform: scale(10); */
+    .grillaHeader{
+        display: grid;
+    }
+    /* bootstrap 
+    .container{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    } */
+    .azul{
+        background-color: #1F4690;
     }
 /*AREAS*/
 
@@ -190,11 +202,11 @@ img{
     .mainPrincipal{ 
     margin: 10px auto;  }
     
-    nav ul{
+    nav ul{ 
         display: flex; 
         flex-direction: column;
         justify-content:space-evenly;
-        
+    }
     }
     li{
         border: 3px solid #E8AA42;
@@ -235,7 +247,7 @@ img{
     .subtitulo:hover{
         transform: scale(3);
     }
-    }
+    
     @media(min-width:768px) { 
     .padre{  
         margin: 0%;
